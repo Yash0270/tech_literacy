@@ -11979,3 +11979,8 @@ header .overlay {
   opacity: 0.5;
   z-index: 1;
 }
+
+.gallery {
+  height: 100%;
+  width: 100%;
+}
