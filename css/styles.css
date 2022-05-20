@@ -11681,4 +11681,38 @@ header .overlay {
 }
 
 
+/* from https://codepen.io/joshuar/pen/MwdYLP */
+/* Section Break 2 */
+/* $body-color: slategray;
+$body-text-size: 1.6rem;
+$break-color: rgb(200, 200, 200);
+$page-color: snow;
+$shadow-color: rgba(0, 0, 0, .15);
+$outline-color: rgba(0, 0, 0, .1);
+$text-color: lighten(black, 30%); */
+
+.section-break-2 {
+  background-color: transparent;
+  border: 0;
+  border-top: 1px solid rgb(200, 200, 200);
+  height: 1px;
+  margin: 2rem auto;
+  text-align: center;
+  width: 80%;
+}
+
+.section-break-2:before {
+    background-color: snow;
+    color: darken(rgb(200, 200, 200), 20%);
+    content: '\25C8';
+    display: inline-block;
+    font-size: 20px;
+    left: 50%;
+    letter-spacing: 0;
+    line-height: 1;
+    text-indent: -1px;
+    text-rendering: geometricPrecision;
+    transform: translateY(-53%);
+    width: 15px;
+}
 
