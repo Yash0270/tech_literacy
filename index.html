@@ -39,8 +39,9 @@
     />
   </head>
 
-  <body id="page-top">
-    <!-- Navigation-->
+  <body >
+    
+    <!-- Nav Bar-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <!-- <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a> -->
@@ -60,7 +61,7 @@
           <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
             <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#schedule">Schedule</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#gallery">Gallery</a>
@@ -73,6 +74,7 @@
       </div>
     </nav>
 
+    <!-- First Page -->
     <header>
       <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
       <div class="overlay"></div>
@@ -85,7 +87,7 @@
         muted="muted"
         loop="loop"
       >
-        <source src="assets/mp4/bg.mp4" type="video/mp4" />
+        <source src="assets/mp4/video.mp4" type="video/mp4" />
       </video>
 
       <!-- The header content -->
@@ -104,11 +106,128 @@
       </div>
     </header>
 
+    <!-- Main Schedule -->
+    <section id="schedule">
+      <h1
+        class="page-section-heading text-center text-uppercase text-black pb-2 font-weight-bold"
+      >
+        2022-2023 Schedule
+      </h1>
+      <table class="table align-middle mb-0 bg-white table-striped">
+        <thead class="bg-light">
+          <tr>
+            <th>Date</th>
+            <th>Topic</th>
+            <th>Resources</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                
+                <div class="ms-3">
+                  <p class="fw mb-1">1st Jan 2022</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">Software engineer</p>
+            </td>
+            <td>
+              <a href="https://google.com" class="badge badge-success rounded-pill d-inline">Slides</a>
+              <br />
+              <a href="https://google.com" class="badge badge-primary rounded-pill d-inline">Recording</a>
+            </td>
+            <td>Senior</td>
+            <td>
+              <button type="button" class="btn btn-link btn-sm btn-rounded">
+                Edit
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                  class="rounded-circle"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Alex Ray</p>
+                  <p class="text-muted mb-0">alex.ray@gmail.com</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">Consultant</p>
+              <p class="text-muted mb-0">Finance</p>
+            </td>
+            <td>
+              <span class="badge badge-primary rounded-pill d-inline"
+                >Onboarding</span
+              >
+            </td>
+            <td>Junior</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-link btn-rounded btn-sm fw-bold"
+                data-mdb-ripple-color="dark"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+                  class="rounded-circle"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Kate Hunington</p>
+                  <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">Designer</p>
+              <p class="text-muted mb-0">UI/UX</p>
+            </td>
+            <td>
+              <span class="badge badge-warning rounded-pill d-inline"
+                >Awaiting</span
+              >
+            </td>
+            <td>Senior</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-link btn-rounded btn-sm fw-bold"
+                data-mdb-ripple-color="dark"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Gallery -->
     <section id="gallery">
-        <h1 class="page-section-heading text-center text-uppercase text-black pb-2 font-weight-bold">
-          Gallery
-        </h1>
-      
+      <h1
+        class="page-section-heading text-center text-uppercase text-black pb-2 font-weight-bold"
+      >
+        Gallery
+      </h1>
+
       <div class="container mt-5m">
         <div class="carousel-container position-relative row">
           <!-- Sorry! Lightbox doesn't work - yet. -->
@@ -393,6 +512,69 @@
       <!-- /container -->
     </section>
 
+    <!-- Previous Instructors -->
+    <section>
+<div class="pt-5 pb-5 bg-dark text-light ">
+  <div id="client-testimonial-carousel" class="carousel slide" data-ride="carousel" style="height:200px;">
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active text-center p-4">
+        <blockquote class="blockquote text-center">
+          <p class="mb-0"><i class="fa fa-quote-left"></i> Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.
+          </p>
+          <footer class="blockquote-footer">Albert Einstein <cite title="Source Title">genius</cite></footer>
+          <!-- Client review stars -->
+          <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+          <p class="client-review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </p>
+        </blockquote>
+      </div>
+      <div class="carousel-item text-center p-4">
+        <blockquote class="blockquote text-center">
+          <p class="mb-0"><i class="fa fa-quote-left"></i> Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.
+          </p>
+          <footer class="blockquote-footer">Albert Einstein <cite title="Source Title">genius</cite></footer>
+          <!-- Client review stars -->
+          <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+          <p class="client-review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+        </blockquote>
+      </div>
+      <div class="carousel-item text-center p-4">
+        <blockquote class="blockquote text-center">
+          <p class="mb-0"><i class="fa fa-quote-left"></i> A person who never made a mistake never tried anything new.
+          </p>
+          <footer class="blockquote-footer">Albert Einstein <cite title="Source Title">genius</cite></footer>
+          <!-- Client review stars -->
+          <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+          <p class="client-review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+        </blockquote>
+      </div>
+    </div>
+    <ol class="carousel-indicators">
+      <li data-target="#client-testimonial-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#client-testimonial-carousel" data-slide-to="1"></li>
+      <li data-target="#client-testimonial-carousel" data-slide-to="2"></li>
+    </ol>
+  </div>
+</div>
+    </section>
+
     <!-- Contact section-->
     <section class="page-section bg-primary text-white mb-0 pt-5" id="contact">
       <div class="container">
@@ -464,7 +646,7 @@
     ></script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script src="js/scripts.js"></script>
   </body>
 </html>
