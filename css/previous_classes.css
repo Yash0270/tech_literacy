@@ -79,6 +79,11 @@
 /* #first_schedule {
   padding-top: 10rem!important;
 } */
+.table {
+  table-layout: auto;
+}
+
+
 
 body {
   margin: 0;
